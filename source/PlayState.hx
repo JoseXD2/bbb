@@ -746,7 +746,7 @@ class PlayState extends MusicBeatState
                                 defaultCamZoom = 0.9;
                                 curStage = 'alley';
                                 var bgTex = Paths.getSparrowAtlas('wity/BallisticBackground', 'Troll');
-                                nwBg = new FlxSprite(-600, -200);
+                                var nwBg:FlxSprite = new FlxSprite(-600, -200);
                                 nwBg.frames = bgTex;
                                 nwBg.antialiasing = true;
                                 nwBg.scrollFactor.set(0.9, 0.9);
