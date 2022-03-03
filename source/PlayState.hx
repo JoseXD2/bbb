@@ -740,6 +740,235 @@ class PlayState extends MusicBeatState
 						stageCurtains.active = false;
 	
 						add(stageCurtains);
+                
+                        case 'alley':
+                            {
+                                defaultCamZoom = 0.9;
+                                curStage = 'alley';
+                                var bgTex = Paths.getSparrowAtlas('wity/BallisticBackground', 'Troll');
+                                nwBg = new FlxSprite(-600, -200);
+                                nwBg.frames = bgTex;
+                                nwBg.antialiasing = true;
+                                nwBg.scrollFactor.set(0.9, 0.9);
+                                nwBg.active = true;
+                                nwBg.animation.addByPrefix('start', 'Background Whitty Start', 24, false);
+                                nwBg.animation.addByPrefix('gaming', 'Background Whitty Startup', 24, false);
+                                nwBg.animation.addByPrefix('gameButMove', 'Background Whitty Moving', 16, true);
+                                nwBg.animation.play('gameButMove');
+                                var wBg:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('wity/whittyback', 'Troll'));
+                                wBg.antialiasing = true;
+                                wBg.scrollFactor.set(0.9, 0.9);
+                                wBg.active = false;
+                
+                                add(wBg);
+                                add(nwBg);
+                                nwBg.alpha = 0.01;
+                                }
+                        case 'ballisticAlley':
+                            {
+                                defaultCamZoom = 0.9;
+                                curStage = '';
+                                var wBg:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('wity/whittyback', 'Troll'));
+                                wBg.antialiasing = true;
+                                var bgTex = Paths.getSparrowAtlas('wity/BallisticBackground', 'Troll');
+                                nwBg = new FlxSprite(-600, -200);
+                                nwBg.frames = bgTex;
+                                nwBg.antialiasing = true;
+                                nwBg.scrollFactor.set(0.9, 0.9);
+                                nwBg.active = true;
+                                nwBg.animation.addByPrefix('start', 'Background Whitty Start', 24, false);
+                                nwBg.animation.addByPrefix('gaming', 'Background Whitty Startup', 24, false);
+                                nwBg.animation.addByPrefix('gameButMove', 'Background Whitty Moving', 16, true);
+                                add(wBg);
+                                add(nwBg);
+                                add(wBg);
+                            }
+                            case 'ragdoll': 
+                            {
+                                curStage = 'ragdoll';
+                
+                                defaultCamZoom = 0.70;
+                                var bg:FlxSprite = new FlxSprite(-600, -400).loadGraphic(Paths.image('GMOD/unknown', 'Troll'));
+                                bg.antialiasing = true;
+                                bg.scrollFactor.set(1, 1);
+                                bg.active = false;
+                                add(bg);
+                            }
+                            case 'trabling': //Fukin Ultimate troldown shit
+                                defaultCamZoom = 0.7;
+                                var bg:FlxSprite = new FlxSprite(-820, -915).loadGraphic(Paths.image('bg/stageback', 'Troll'));
+                                bg.setGraphicSize(Std.int(bg.width * 1.31));
+                                bg.updateHitbox();
+                                add(bg);
+                
+                                var stageFront:FlxSprite = new FlxSprite(-808, 800).loadGraphic(Paths.image('bg/stagefront', 'Troll'));
+                                stageFront.setGraphicSize(Std.int(stageFront.width * 1.4));
+                                stageFront.updateHitbox();
+                                add(stageFront);
+                
+                            case 'bilding': 
+                            {
+                                curStage = 'bilding';
+                
+                                defaultCamZoom = 0.72;
+                                var bfbg:FlxSprite = new FlxSprite(-600, -400).loadGraphic(Paths.image('Alone/BGB', 'Troll'));
+                                bfbg.antialiasing = true;
+                                bfbg.scrollFactor.set(0.9, 0.9);
+                                bfbg.active = false;
+                                add(bfbg);
+                            }
+                            case 'hapenis': 
+                            {
+                                curStage = 'hapenis';
+                
+                                defaultCamZoom = 0.75;
+                                var bfbg:FlxSprite = new FlxSprite(-600, -400).loadGraphic(Paths.image('H A P P Y/BGB', 'Troll'));
+                                bfbg.antialiasing = true;
+                                bfbg.scrollFactor.set(0.9, 0.9);
+                                bfbg.active = false;
+                                add(bfbg);
+                            }
+                            case 'smile': 
+                            {
+                                curStage = 'smile';
+                
+                                defaultCamZoom = 0.75;
+                                var bg:FlxSprite = new FlxSprite(-600, -400).loadGraphic(Paths.image('Smile/alley', 'Troll'));
+                                bg.antialiasing = true;
+                                bg.setGraphicSize(Std.int(bg.width * 1.5));
+                                bg.scrollFactor.set(1,1);
+                                bg.active = false;
+                                add(bg);
+                
+                                var hallowTex = Paths.getSparrowAtlas('Smile/lights','Troll');
+                                var rain:FlxSprite = new FlxSprite(-600, -400);
+                                rain.frames = hallowTex;
+                                rain.animation.addByPrefix('off', 'lights off');
+                                rain.animation.addByPrefix('on', 'lights on');
+                                rain.animation.play('on');
+                                rain.antialiasing = true;
+                                rain.setGraphicSize(Std.int(rain.width * 1.5));
+                                add(rain);
+                            }
+                            case 'ttto': 
+                            {
+                                curStage = 'ttto';
+                
+                                defaultCamZoom = 0.75;
+                                var blank:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('TTTO/BG', 'Troll'));
+                                blank.antialiasing = true;
+                                blank.setGraphicSize(Std.int(blank.width * 2));
+                                blank.scrollFactor.set(1, 1);
+                                blank.active = false;
+                                add(blank);
+                            }
+                            case 'final':
+                            {
+                                defaultCamZoom = 0.9;
+                                curStage = 'final';
+                                var bg:FlxSprite = new FlxSprite(-400, -220).loadGraphic(Paths.image('Final-Destination/bg_boxn', 'Troll'));
+                                bg.antialiasing = true;
+                                bg.scrollFactor.set(0.8, 0.8);
+                                bg.active = false;
+                                add(bg);
+                
+                                var bg_r:FlxSprite = new FlxSprite(-810, -380).loadGraphic(Paths.image('Final-Destination/bg_boxr', 'Troll'));
+                                bg_r.antialiasing = true;
+                                bg_r.scrollFactor.set(1, 1);
+                                bg_r.active = false;
+                                add(bg_r);
+                            }
+                            case 'sus': 
+                            {
+                                curStage = 'sus';
+                
+                                defaultCamZoom = 99;
+                                var bg:FlxSprite = new FlxSprite(-1000, -1000).loadGraphic(Paths.image('imposter/BG', 'Troll'));
+                                bg.setGraphicSize(Std.int(bg.width * 2.5));
+                                bg.active = true;
+                                bg.antialiasing = true;
+                                bg.scrollFactor.set(1, 1);
+                
+                                var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect();
+                                testshader.waveAmplitude = 0.5;
+                                testshader.waveFrequency = 5;
+                                testshader.waveSpeed = 1;
+                                bg.shader = testshader.shader;
+                                curbg = bg;
+                
+                                add(bg);
+                            }
+                
+                            case 'blank': 
+                            {
+                                curStage = 'Nothing';
+                
+                                defaultCamZoom = 0.15;
+                                var bg:FlxSprite = new FlxSprite(-3500, -3500).loadGraphic(Paths.image('OTHER/BLANK', 'Troll'));
+                                bg.antialiasing = true;
+                                bg.scrollFactor.set(1, 1);
+                                bg.active = false;
+                                add(bg);
+                
+                            }
+                            case 'funi-rom': 
+                            {
+                                curStage = 'funi-rom';
+                
+                                defaultCamZoom = 1;
+                                var bg:FlxSprite = new FlxSprite(-600, -400).loadGraphic(Paths.image('Phase4/rom', 'Troll'));
+                                bg.antialiasing = true;
+                                bg.scrollFactor.set(1, 1);
+                                bg.active = false;
+                                add(bg);
+                
+                                tomfoolery = new FlxSprite(0,0).loadGraphic(Paths.image('Phase4/tttt2'));
+                                tomfoolery.scrollFactor.set(0, 0);
+                                tomfoolery.visible = false;
+                            }
+                            case 'fuck': 
+                            {
+                                curStage = 'fuck';
+                
+                
+                                var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('Phase3Old/dear god help', 'Troll'));
+                                bg.antialiasing = FlxG.save.data.antialiasing;
+                                bg.scrollFactor.set(0.9, 0.9);
+                                bg.active = false;
+                                add(bg);
+                
+                                var bottomBoppers:FlxSprite = new FlxSprite(-300, 140);
+                                bottomBoppers.frames = Paths.getSparrowAtlas('Phase3Old/Office maybe','Troll');
+                                bottomBoppers.animation.addByPrefix('bop', 'Bottom Level Boppers', 24, false);
+                                bottomBoppers.antialiasing = FlxG.save.data.antialiasing;
+                                bottomBoppers.scrollFactor.set(0.9, 0.9);
+                                bottomBoppers.setGraphicSize(Std.int(bottomBoppers.width * 1));
+                                bottomBoppers.updateHitbox();
+                
+                                add(bottomBoppers);
+                
+                            }
+                            case 'office': 
+                            {
+                                curStage = 'office';
+                
+                                defaultCamZoom = 0.90;
+                                var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('Phase1Old/BG', 'Troll'));
+                                bg.antialiasing = FlxG.save.data.antialiasing;
+                                bg.scrollFactor.set(0.9, 0.9);
+                                bg.active = false;
+                                add(bg);
+                
+                                var bottomBoppers:FlxSprite = new FlxSprite(-300, 140);
+                                bottomBoppers.frames = Paths.getSparrowAtlas('Phase1Old/Office','Troll');
+                                bottomBoppers.animation.addByPrefix('bop', 'Bottom Level Boppers', 24, false);
+                                bottomBoppers.antialiasing = FlxG.save.data.antialiasing;
+                                bottomBoppers.scrollFactor.set(0.9, 0.9);
+                                bottomBoppers.setGraphicSize(Std.int(bottomBoppers.width * 1));
+                                bottomBoppers.updateHitbox();
+                                add(bottomBoppers);
+                        
+                                    
 				}
 			default:
 			{
