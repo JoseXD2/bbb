@@ -740,7 +740,7 @@ class PlayState extends MusicBeatState
 						stageCurtains.active = false;
 	
 						add(stageCurtains);
-                
+			    }
                         case 'alley':
                             {
                                 defaultCamZoom = 0.9;
@@ -795,7 +795,7 @@ class PlayState extends MusicBeatState
                                 add(bg);
                             }
                             case 'trabling': //Fukin Ultimate troldown shit
-                                defaultCamZoom = 0.7;
+                            {   defaultCamZoom = 0.7;       
                                 var bg:FlxSprite = new FlxSprite(-820, -915).loadGraphic(Paths.image('bg/stageback', 'Troll'));
                                 bg.setGraphicSize(Std.int(bg.width * 1.31));
                                 bg.updateHitbox();
@@ -805,7 +805,7 @@ class PlayState extends MusicBeatState
                                 stageFront.setGraphicSize(Std.int(stageFront.width * 1.4));
                                 stageFront.updateHitbox();
                                 add(stageFront);
-                
+			    }
                             case 'bilding': 
                             {
                                 curStage = 'bilding';
