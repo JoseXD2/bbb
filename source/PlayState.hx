@@ -771,7 +771,7 @@ class PlayState extends MusicBeatState
                                 var wBg:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('wity/whittyback', 'Troll'));
                                 wBg.antialiasing = true;
                                 var bgTex = Paths.getSparrowAtlas('wity/BallisticBackground', 'Troll');
-                                nwBg = new FlxSprite(-600, -200);
+                                var nwBg:FlxSprite = new FlxSprite(-600, -200);
                                 nwBg.frames = bgTex;
                                 nwBg.antialiasing = true;
                                 nwBg.scrollFactor.set(0.9, 0.9);
