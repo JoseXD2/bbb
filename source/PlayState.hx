@@ -889,7 +889,7 @@ class PlayState extends MusicBeatState
                                 bg.antialiasing = true;
                                 bg.scrollFactor.set(1, 1);
                 
-                                var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect();
+                                var testshader:FlxSpriteShaders.GlitchEffect = new Shaders.GlitchEffect();
                                 testshader.waveAmplitude = 0.5;
                                 testshader.waveFrequency = 5;
                                 testshader.waveSpeed = 1;
@@ -922,7 +922,7 @@ class PlayState extends MusicBeatState
                                 bg.active = false;
                                 add(bg);
                 
-                                tomfoolery = new FlxSprite(0,0).loadGraphic(Paths.image('Phase4/tttt2'));
+                                var tomfoolery:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('Phase4/tttt2'));
                                 tomfoolery.scrollFactor.set(0, 0);
                                 tomfoolery.visible = false;
                             }
