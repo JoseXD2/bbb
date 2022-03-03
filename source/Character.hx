@@ -498,6 +498,366 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+			case 'smile':
+				tex = Paths.getSparrowAtlas('Smile/smile', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'smile idle', 24);
+				animation.addByPrefix('singUP', 'smile up', 24);
+				animation.addByPrefix('singRIGHT', 'smile right', 24);
+				animation.addByPrefix('singDOWN', 'smile down', 24);
+				animation.addByPrefix('singLEFT', 'smile left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -293, -74);
+				addOffset("singRIGHT", -185, -225);
+				addOffset("singLEFT", -179, -228);
+				addOffset("singDOWN", -260, -517);
+
+				playAnim('idle');
+			case 'thai':
+				tex = Paths.getSparrowAtlas('Characters/mmmmm', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'mmmmm idle', 12);
+				animation.addByPrefix('singUP', 'mmmmm up', 15);
+				animation.addByPrefix('singRIGHT', 'mmmmm right', 15);
+				animation.addByPrefix('singDOWN', 'mmmmm down', 15);
+				animation.addByPrefix('singLEFT', 'mmmmm left', 15);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				playAnim('idle');
+			case 'skit':
+				tex = Paths.getSparrowAtlas('Characters/Skit', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'Skit idle', 12);
+				animation.addByPrefix('singUP', 'Skit up', 15);
+				animation.addByPrefix('singRIGHT', 'Skit right', 15);
+				animation.addByPrefix('singDOWN', 'Skit down', 15);
+				animation.addByPrefix('singLEFT', 'Skit left', 15);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				playAnim('idle');
+			case 'gmod':
+				tex = Paths.getSparrowAtlas('Characters/gmodtroll', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'gmodtroll idle', 12);
+				animation.addByPrefix('singUP', 'gmodtroll up', 15);
+				animation.addByPrefix('singRIGHT', 'gmodtroll right', 15);
+				animation.addByPrefix('singDOWN', 'gmodtroll down', 15);
+				animation.addByPrefix('singLEFT', 'gmodtroll left', 15);
+				animation.addByPrefix('fall', 'gmodtroll bombfall', 7);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				addOffset("fall");
+
+				playAnim('idle');
+			case 'whitty': // whitty reg (lofight,overhead)
+				tex = Paths.getSparrowAtlas('wity/WhittySprites', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'Idle', 24);
+				animation.addByPrefix('singUP', 'Sing Up', 24);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24);
+				animation.addByPrefix('singLEFT', 'Sing Left', 24);
+
+				addOffset('idle', 0,0 );
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+			case 'whittyCrazy': // whitty crazy (ballistic)
+				tex = Paths.getSparrowAtlas('wity/WhittyCrazy', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'Whitty idle dance', 24);
+				animation.addByPrefix('singUP', 'Whitty Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'whitty sing note right', 24);
+				animation.addByPrefix('singDOWN', 'Whitty Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Whitty Sing Note LEFT', 24);
+
+				addOffset('idle', 50);
+				addOffset("singUP", 50, 85);
+				addOffset("singRIGHT", 100, -75);
+				addOffset("singLEFT", 50);
+				addOffset("singDOWN", 75, -150);
+			case 'bftroll':
+				tex = Paths.getSparrowAtlas('Characters/TrollgeUWU', 'Troll');
+				frames = tex; 
+				animation.addByPrefix('idle', 'Trollge Idle', 24);
+				animation.addByPrefix('singUP', 'Trollge Up', 24);
+				animation.addByPrefix('singLEFT', 'Trollge Right', 24);
+				animation.addByPrefix('singDOWN', 'Trollge Down', 24);
+				animation.addByPrefix('singRIGHT', 'Trollge Left', 24);
+
+				addOffset('idle', 0, 50);
+				addOffset("singUP", 24, 135);
+				addOffset("singLEFT", 120, -60);
+				addOffset("singRIGHT", 17, 58);
+				addOffset("singDOWN", 50, -66);
+
+				playAnim('idle');
+			case 'blood':
+				tex = Paths.getSparrowAtlas('Characters/blood', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'blood idle', 24);
+				animation.addByPrefix('singUP', 'blood up', 24);
+				animation.addByPrefix('singRIGHT', 'blood right', 24);
+				animation.addByPrefix('singDOWN', 'blood down', 24);
+				animation.addByPrefix('singLEFT', 'blood left', 24);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				playAnim('idle');
+			case 'alone':
+				tex = Paths.getSparrowAtlas('Characters/lone-troll', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'LONETROLL_IDLE', 24);
+				animation.addByPrefix('singUP', 'LONETROLL_UP', 24);
+				animation.addByPrefix('singRIGHT', 'LONETROLL_RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'LONETROLL_DOWN', 24);
+				animation.addByPrefix('singLEFT', 'LONETROLL_LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 53, 100);
+				addOffset("singRIGHT", -2, 56);
+				addOffset("singLEFT", 33, 9);
+				addOffset("singDOWN", 9);
+
+				setGraphicSize(Std.int(width * 1.5));
+				playAnim('idle');
+			case 'happy':
+				tex = Paths.getSparrowAtlas('Characters/troll-hapiness', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'TROLL_IDLE', 24);
+				animation.addByPrefix('singUP', 'TROLL_UP', 24);
+				animation.addByPrefix('singRIGHT', 'TROLL_RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'TROLL_DOWN', 24);
+				animation.addByPrefix('singLEFT', 'TROLL_LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 10, -81);
+				addOffset("singRIGHT", 76, -4);
+				addOffset("singLEFT", 135, 13 );
+				addOffset("singDOWN", -8, 23);
+
+				playAnim('idle');
+			case 'other':
+				tex = Paths.getSparrowAtlas('OTHER/blonk', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24);
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note LEFT', 24);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note RIGHT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 30, 57);
+				addOffset("singRIGHT", 45, -31);
+				addOffset("singLEFT", -88, -37);
+				addOffset("singDOWN", -35, -43);
+
+				playAnim('idle');
+			case 'troil':
+				tex = Paths.getSparrowAtlas('Ultimate/coughtroll', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'Troll idle dance', 15);
+				animation.addByPrefix('singUP', 'Troll Sing Note UP', 15);
+				animation.addByPrefix('singRIGHT', 'Troll Sing Note RIGHT', 15);
+				animation.addByPrefix('singDOWN', 'Troll Sing Note DOWN', 15);
+				animation.addByPrefix('singLEFT', 'Troll Sing Note LEFT', 15);
+
+				addOffset('idle', 280, 330);
+				addOffset("singUP", 279, 330);
+				addOffset("singRIGHT", 296, 330);
+				addOffset("singLEFT", 281, 330);
+				addOffset("singDOWN", 281, 331);
+
+				playAnim('idle');
+			case 'troil2':
+				tex = Paths.getSparrowAtlas('Ultimate/coughtroll', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'Troll idle dance', 15);
+				animation.addByPrefix('singUP', 'Troll Sing Note UP', 51);
+				animation.addByPrefix('singRIGHT', 'Troll Sing Note RIGHT', 51);
+				animation.addByPrefix('singDOWN', 'Troll Sing Note DOWN', 15);
+				animation.addByPrefix('singLEFT', 'Troll Sing Note LEFT', 15);
+
+				addOffset('idle', 280, 330);
+				addOffset("singUP", 279, 330);
+				addOffset("singRIGHT", 296, 330);
+				addOffset("singLEFT", 281, 330);
+				addOffset("singDOWN", 281, 331);
+
+				playAnim('idle');
+			case 'trolio':
+				tex = Paths.getSparrowAtlas('Ultimate/sirtroll', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'Troll idle dance', 15);
+				animation.addByPrefix('singUP', 'Troll Sing Note UP', 15);
+				animation.addByPrefix('singRIGHT', 'Troll Sing Note RIGHT', 15);
+				animation.addByPrefix('singDOWN', 'Troll Sing Note DOWN', 15);
+				animation.addByPrefix('singLEFT', 'Troll Sing Note LEFT', 15);
+
+				addOffset('idle', 280, 330);
+				addOffset("singUP", 279, 330);
+				addOffset("singRIGHT", 296, 330);
+				addOffset("singLEFT", 281, 330);
+				addOffset("singDOWN", 281, 331);
+
+				playAnim('idle');
+			case 'magneto':
+				tex = Paths.getSparrowAtlas('Characters/TrollgeUWU', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'Trollge Idle', 24);
+				animation.addByPrefix('singUP', 'Trollge Up', 24);
+				animation.addByPrefix('singRIGHT', 'Trollge Right', 24);
+				animation.addByPrefix('singDOWN', 'Trollge Down', 24);
+				animation.addByPrefix('singLEFT', 'Trollge Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 20, 70);
+				addOffset("singRIGHT", 38, -109);
+				addOffset("singLEFT", 11, 0);
+				addOffset("singDOWN", 0, -113);
+
+				playAnim('idle');
+			case 'phase8':
+				tex = Paths.getSparrowAtlas('Characters/TrollgeUWU', 'Troll');
+				frames = tex;
+				animation.addByPrefix('idle', 'Trollge Idle', 24);
+				animation.addByPrefix('singUP', 'Trollge Up', 24);
+				animation.addByPrefix('singRIGHT', 'Trollge Right', 24);
+				animation.addByPrefix('singDOWN', 'Trollge Down', 24);
+				animation.addByPrefix('singLEFT', 'Trollge Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 20, 70);
+				addOffset("singRIGHT", 38, -109);
+				addOffset("singLEFT", 11, 0);
+				addOffset("singDOWN", 0, -113);
+
+				playAnim('idle');
+				case 'trolling3':
+				if (FlxG.save.data.old)
+				{
+					tex = Paths.getSparrowAtlas('Phase3Old/troll', 'Troll');
+					frames = tex;
+					animation.addByPrefix('idle', 'Dad idle dance', 24);
+					animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
+					animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24);
+					animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+					animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+
+					addOffset('idle');
+					addOffset("singUP");
+					addOffset("singRIGHT");
+					addOffset("singLEFT");
+					addOffset("singDOWN");
+	
+					playAnim('idle');
+				}
+				else
+				{
+					tex = Paths.getSparrowAtlas('Phase3Old/troll', 'Troll');
+					frames = tex;
+					animation.addByPrefix('idle', 'Dad idle dance', 24);
+					animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
+					animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24);
+					animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+					animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+
+					addOffset('idle');
+					addOffset("singUP");
+					addOffset("singRIGHT");
+					addOffset("singLEFT");
+					addOffset("singDOWN");
+	
+					playAnim('idle');
+				}
+		
+			case 'trolling2e':
+				if (FlxG.save.data.old)
+					{
+						tex = Paths.getSparrowAtlas('Phase2Old/trollE', 'Troll');
+					}
+					else
+					{
+						tex = Paths.getSparrowAtlas('Phase2Old/trollE', 'Troll');
+					}
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24);
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note LEFT', 24);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note RIGHT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 29, 56);
+				addOffset("singLEFT", 0, 27);
+				addOffset("singRIGHT", -90, -39);
+				addOffset("singDOWN", -36, -44);
+
+				playAnim('idle');
+			case 'trolling2':
+				if (FlxG.save.data.old)
+					{
+						tex = Paths.getSparrowAtlas('Phase2Old/troll', 'Troll');
+					}
+					else
+					{
+						tex = Paths.getSparrowAtlas('Phase2Old/troll', 'Troll');
+					}
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24);
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note LEFT', 24);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note RIGHT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 29, 56);
+				addOffset("singLEFT", 0, 27);
+				addOffset("singRIGHT", -90, -39);
+				addOffset("singDOWN", -36, -44);
+
+				playAnim('idle');
+			case 'trolling':
+				if (FlxG.save.data.old)
+					{
+						tex = Paths.getSparrowAtlas('Phase1Old/troll', 'Troll');
+					}
+					else
+					{
+						tex = Paths.getSparrowAtlas('Phase1Old/troll', 'Troll');
+					}
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24);
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note LEFT', 24);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note RIGHT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 30, 57);
+				addOffset("singLEFT", 45, -31);
+				addOffset("singRIGHT", -88, -37);
+				addOffset("singDOWN", -35, -43);
 		}
 
 		dance();
