@@ -58,7 +58,7 @@ class StoryMenuState extends MusicBeatState
 		"MOMMY MUST MURDER",
 		"RED SNOW",
 		"Hating Simulator ft. Moawling"
-                "The Original",
+                "The Original"
                 "???"
                 "test"
 	];
