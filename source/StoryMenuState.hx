@@ -27,10 +27,13 @@ class StoryMenuState extends MusicBeatState
 	var weekData:Array<Dynamic> = [
 		['Tutorial'],
 		['Bopeebo', 'Fresh', 'Dad Battle'],
+        ['Trolling', 'Mistaken', 'The-Incident'],
 		['Spookeez', 'South', "Monster"],
 		['Pico', 'Philly Nice', "Blammed"],
 		['Satin Panties', "High", "Milf"],
+        ['Tomfoolery', 'The-Trollge', 'Delirium'],
 		['Cocoa', 'Eggnog', 'Winter Horrorland'],
+        ['delirium']
 		['Senpai', 'Roses', 'Thorns']
 	];
 	var curDifficulty:Int = 1;
@@ -55,6 +58,9 @@ class StoryMenuState extends MusicBeatState
 		"MOMMY MUST MURDER",
 		"RED SNOW",
 		"Hating Simulator ft. Moawling"
+        "The Original",
+        "???"
+        "test"
 	];
 
 	var txtWeekTitle:FlxText;
