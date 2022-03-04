@@ -889,7 +889,7 @@ class PlayState extends MusicBeatState
                                 bg.antialiasing = true;
                                 bg.scrollFactor.set(1, 1);
                 
-                                var testshader:Shaders.GlitchEffect = new Flx Sprite Shaders.GlitchEffect();
+                                var testshader:FlxSprite Shaders.GlitchEffect = new Flx Sprite (Shaders.GlitchEffect));
                                 testshader.waveAmplitude = 0.5;
                                 testshader.waveFrequency = 5;
                                 testshader.waveSpeed = 1;
