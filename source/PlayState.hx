@@ -878,19 +878,6 @@ class PlayState extends MusicBeatState
                                 bg_r.active = false;
                                 add(bg_r);
                             }
-                            case 'sus': 
-                            {
-                                curStage = 'sus';
-                
-                                defaultCamZoom = 99;
-                                var bg:FlxSprite = new FlxSprite(-1000, -1000).loadGraphic(Paths.image('imposter/BG', 'Troll'));
-                                bg.setGraphicSize(Std.int(bg.width * 2.5));
-                                bg.active = true;
-                                bg.antialiasing = true;
-                                bg.scrollFactor.set(1, 1)
-                                add(bg);
-                            }
-                
                             case 'blank': 
                             {
                                 curStage = 'Nothing';
@@ -901,7 +888,6 @@ class PlayState extends MusicBeatState
                                 bg.scrollFactor.set(1, 1);
                                 bg.active = false;
                                 add(bg);
-                
                             }
                             case 'funi-rom': 
                             {
