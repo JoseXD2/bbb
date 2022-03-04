@@ -133,7 +133,7 @@ class MainMenuState extends MusicBeatState
 			menuItem.centerOffsets();
 		}
 
-		var button = new FlxSprite(0, -20).loadGraphic(Paths.image('Menu/button', 'Troll'));
+		var button:FlxSprite = new FlxSprite(0, -20).loadGraphic(Paths.image('Menu/button', 'Troll'));
 		button.setGraphicSize(Std.int(button.width * 0.65));
 		button.updateHitbox();
 		button.screenCenter();
