@@ -58,9 +58,6 @@ class StoryMenuState extends MusicBeatState
 		"MOMMY MUST MURDER",
 		"RED SNOW",
 		"Hating Simulator ft. Moawling"
-                "The Original"
-                "???"
-                "test"
 	];
 
 	var txtWeekTitle:FlxText;
