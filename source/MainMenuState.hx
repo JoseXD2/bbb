@@ -141,7 +141,7 @@ class MainMenuState extends MusicBeatState
 		add(button);
 
 		button.updateHitbox();
-		buttonhitbox:FlxObject = new FlxObject;(button.x + button.width, button.y - button.height, 24, 24);
+		var buttonhitbox:FlxObject = new FlxObject(button.x + button.width, button.y - button.height, 24, 24);
 		add(buttonhitbox);
 
 		// NG.core.calls.event.logEvent('swag').send();
