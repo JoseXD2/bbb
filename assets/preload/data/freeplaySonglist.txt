@@ -1,19 +1,14 @@
-Tutorial:gf:1
-Bopeebo:dad:1
-Fresh:dad:1
-Dad Battle:dad:1
-Spookeez:spooky:2
-South:spooky:2
-Monster:monster:2
-Pico:pico:3
-Philly Nice:pico:3
-Blammed:pico:3
-Satin Panties:mom:4
-High:mom:4
-Milf:mom:4
-Cocoa:parents-christmas:5
-Eggnog:parents-christmas:5
-Winter Horrorland:monster-christmas:5
-Senpai:senpai:6
-Roses:senpai:6
-Thorns:spirit:6
+absurde:Phase8:1
+alone-forever:alone:2
+do-delirium:thai:3
+happiness:happy:4
+imposter:no-bobux:5
+mistaken:trolling2:6
+ragdoll:gmod:7
+smile:smile:8
+the-incident:trolling3:9
+tomfoolery:trolling:10
+trolling:trolling:11
+trolistic:whitty:12
+turn-the-trolls-off:trolling:13
+ultimate-trolldown:troil:14
