@@ -34,7 +34,7 @@ class StoryMenuState extends MusicBeatState
         ['Tomfoolery', 'The-Trollge', 'Delirium'],
 		['Cocoa', 'Eggnog', 'Winter Horrorland'],
         ['delirium']
-		['Senpai', 'Roses', 'Thorns']
+		['Senpai', 'Roses', 'Thorns'],
 	];
 	var curDifficulty:Int = 1;
 
