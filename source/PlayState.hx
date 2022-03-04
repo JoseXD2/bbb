@@ -887,15 +887,7 @@ class PlayState extends MusicBeatState
                                 bg.setGraphicSize(Std.int(bg.width * 2.5));
                                 bg.active = true;
                                 bg.antialiasing = true;
-                                bg.scrollFactor.set(1, 1);
-                
-                                var testshader:FlxSprite Shaders.GlitchEffect = new Flx Sprite (Shaders.GlitchEffect));
-                                testshader.waveAmplitude = 0.5;
-                                testshader.waveFrequency = 5;
-                                testshader.waveSpeed = 1;
-                                bg.shader = testshader.shader;
-                                var curbg:FlxSprite = new FlxSprite bg;
-                
+                                bg.scrollFactor.set(1, 1)
                                 add(bg);
                             }
                 
